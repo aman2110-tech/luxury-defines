@@ -1,6 +1,6 @@
 const express=require("express");
 const app=express();
-const port=3000;
+const PORT = process.env.PORT || 3000;
 const path = require("path"); 
 const {v4:uuidvv4}=require("uuid");
 
@@ -127,6 +127,6 @@ app.get("/products/:id", (req, res) => {
   res.render("show.ejs", { product });
 });
 
-app.listen(port,()=>{
-    console.log("i am listning");
-})
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
