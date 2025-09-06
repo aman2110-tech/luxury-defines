@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= product.name %> - Ecommerce</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">
+        <h3>Product Details</h3>
+    </div>
+  <section class="products-indivisual-section">
+    
+    
+
+    <div class="product-indivisual-card">
+      <div class="product-indivisual-image">
+        <img src="<%= product.image %>" alt="<%= product.name %>" class="product-indivisual-img">
+      </div>
+
+      <h3 class="product-title"><%= product.name %></h3>
+      <p class="product-price">$<%= product.price %></p>
+      <p class="product-description"><%= product.description %></p>
+
+      <button class="btn-indivisual">Order Now</button>
+      <p class="emi">EMI from $20/month</p>
+      <h4>Rating  ⭐⭐⭐⭐⭐</h4>
+      <div class="related-info">
+        <div class="info">
+         🔄
+         <p>7 Days Brand Support</p>
+        </div>
+        <div class="info">
+         💸
+         <p>No cash on Delivery</p>
+        </div>
+        <div class="info">
+            🏷️
+            <p>Discount Coupon for Plus Members</p>
+        </div>
+      </div>
+      <form action="" class="form">
+        <input type="text" class="text" placeholder="write Review">
+        <button class="submit">submit</button>
+      </form>
+      
+    </div>
+  </section>
+</body>
+</html>
